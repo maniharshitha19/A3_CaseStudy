@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: petrescue
-          image: dbhavana/pet-rescue-app:new
+          image: maniharshitha19/pet-rescue-app:new
           ports:
             - containerPort: 8004
