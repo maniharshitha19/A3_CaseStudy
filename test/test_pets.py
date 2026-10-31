@@ -21,7 +21,7 @@ def driver():
 
 
 def test_home_page_loads_with_stats(driver):
-    driver.get("http://localhost:5001/")
+    driver.get("http://localhost:8004/")
     assert "Pet Rescue" in driver.page_source
     page = driver.page_source
     assert "Total" in page
@@ -30,7 +30,7 @@ def test_home_page_loads_with_stats(driver):
 
 
 def test_add_pet_and_view(driver):
-    driver.get("http://localhost:5001/add")
+    driver.get("http://localhost:8004/add")
     driver.find_element(By.NAME, "name").send_keys("Selenium Test Pet")
     driver.find_element(By.NAME, "type").send_keys("Dog")
     driver.find_element(By.TAG_NAME, "button").click()
